@@ -92,6 +92,7 @@ CI also builds the Cloudflare Worker and requests every page from it in local wo
 ## Guidelines
 
 - Add or update a test in `lib/__tests__/` for any behavior change to `lib/`. The bugs this project has fixed were exactly the kind unit tests catch (number precision, money rounding, encoding edge cases).
+- Add component tests in `components/` (or the corresponding `app/` route directory) using the happy-dom test project.
 - Keep the change focused. Small, single-purpose PRs are reviewed faster.
 - Match the surrounding style. There is no separate formatter config; follow the existing code.
 - No analytics, trackers, or network calls that send user data anywhere. The privacy claim is the whole point.
